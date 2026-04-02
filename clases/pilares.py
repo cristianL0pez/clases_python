@@ -55,8 +55,16 @@ class Auto(Vehiculo):
         print("auto moviendose")
 
 class Moto(Vehiculo):
+    def __init__(self, marca, cant_ruedas,ruedas):
+        super().__init__(marca, cant_ruedas)
+        
+
     def moverse(self):
         print("moto moviendose")
+
+
+class Rueda:
+    pass
 
 
 

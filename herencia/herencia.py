@@ -68,6 +68,19 @@ efectivo1 = Efectivo(100)
 verificar_pago(efectivo1)
     
 
+#super()
+
+
+class Empleado:
+    def __init__(self, nombre, salario):
+        self.nombre = nombre
+        self.salario = salario
+
+
+class Desarrollador(Empleado):
+    def __init__(self, nombre, salario,lenguaje):
+        super().nombre # nos traemos todos los atributos de empleado y agregamos los que son de  desarrollador solamente
+        self.lenguaje = lenguaje
 
 
 
